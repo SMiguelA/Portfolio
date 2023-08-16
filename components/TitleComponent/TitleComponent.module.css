@@ -1,0 +1,17 @@
+.container{
+  width: 100%;
+  border-radius: 0.5em;
+  background-color: rgba(66, 66, 66, 0.753);
+  backdrop-filter: blur(2px);
+  padding: 1em;
+  line-height: 1.5;
+  font-size: 2em;
+}
+.container div{
+  display: inline;
+  margin-left: 6px;
+  color: #c48aff;
+} 
+.info{
+  display: inline;
+}
