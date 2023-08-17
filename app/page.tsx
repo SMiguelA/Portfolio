@@ -1,6 +1,7 @@
 import InfoCards from '@/components/InfoCards/InfoCards'
 import MusicPlayer from '@/components/MusicPlayer/MusicPlayer'
 import StatsCards from '@/components/StatsCards/StatsCards'
+import TechStack from '@/components/TechStack/TechStack'
 import TitleComponent from '@/components/TitleComponent/TitleComponent'
 import style from './page.module.css'
 
@@ -18,7 +19,7 @@ export default function Home() {
       </section>
 
       <section className={style.SLfirstItem}>
-
+        <TechStack />
       </section>
 
       <section className={style.SLSecondItem}>

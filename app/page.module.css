@@ -7,9 +7,6 @@
    margin: auto;
    gap: 0.5em;
 }
-.container section{
-   border: 1px solid blue;
-}
 .FLfirstItem, .FLsecondItem{
    width: 49%;
    height: 45vh;
@@ -19,10 +16,12 @@
 }
 .SLfirstItem{
    width: 39%;
+   border: 1px solid blue;
    height: 30vh;
    gap: 0.5em;
 }
 .SLSecondItem{
+   border: 1px solid blue;
    width: 59%;
    gap: 0.5em;
    height: 30vh;
