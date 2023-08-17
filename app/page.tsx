@@ -1,3 +1,4 @@
+import AboutMe from '@/components/AboutMe/AboutMe'
 import InfoCards from '@/components/InfoCards/InfoCards'
 import MusicPlayer from '@/components/MusicPlayer/MusicPlayer'
 import StatsCards from '@/components/StatsCards/StatsCards'
@@ -23,7 +24,7 @@ export default function Home() {
       </section>
 
       <section className={style.SLSecondItem}>
-
+        <AboutMe />
       </section>
     </main>
   )

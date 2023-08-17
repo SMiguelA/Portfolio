@@ -1,0 +1,26 @@
+.container {
+  width: 22.7%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  padding: 0.5em;
+  justify-content: center;
+  color: white;
+  border-radius: 0.5em;
+  background-color: #3A3A3A;
+  border: 1px solid grey;
+  transition: 100ms ease-out;
+}
+.container svg{
+  font-size: 2.4em;
+  transition: 100ms ease;
+}
+.container span{
+  color: #b6b6b6 !important;
+  cursor: default;
+}
+.container:hover span{
+  color: #b6b6b6 !important;
+}
