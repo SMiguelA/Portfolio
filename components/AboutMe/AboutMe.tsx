@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import style from './AboutMe.module.css'
 
 const AboutMe = () => {
