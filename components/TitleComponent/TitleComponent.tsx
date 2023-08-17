@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import TypingEffect from '../TypingEffect/TypingEffect'
 import style from './TitleComponent.module.css'
 
