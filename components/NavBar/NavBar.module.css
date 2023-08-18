@@ -1,5 +1,6 @@
 .navbar{
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   height: fit-content;
   transition: 300ms ease;
   background-color: rgba(66, 66, 66, 0.753);
@@ -105,4 +106,13 @@
 
 .page a > svg{
   color: #c191f1;
+}
+
+
+
+
+@media (max-width: 1000px){
+  .navbar{
+    bottom: 50%;
+  }
 }

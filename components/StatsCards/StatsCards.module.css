@@ -9,7 +9,9 @@
   border-radius: 0.5em;
   min-height: 100%;
   display: flex;
+  padding: 2em;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
   gap: 0.5em;

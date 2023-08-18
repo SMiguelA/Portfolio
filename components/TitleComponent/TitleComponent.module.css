@@ -1,4 +1,6 @@
 .container{
+  position: relative;
+  z-index: 2;
   width: 100%;
   border-radius: 0.5em;
   background-color: rgba(66, 66, 66, 0.753);
@@ -14,4 +16,29 @@
 } 
 .info{
   display: inline;
+}
+
+
+.figModel1, .figModel2, .figModel3{
+  position: absolute;
+  padding: 0.32em;
+  border-radius: 3em;
+  background: linear-gradient(172deg, #1a227ee0, #87cfebb2);
+}
+.figModel2, .figModel3{
+  width: 3em;
+}
+.figModel1{
+  width: 5.7em;
+  top: -0.5em;
+  left: -2em;
+}
+.figModel2{
+  top: 1em;
+  z-index: 1;
+  left: -2.8em;
+}
+.figModel3{
+  top: 2.5em;
+  left: -2.5em;
 }

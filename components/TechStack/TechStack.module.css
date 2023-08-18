@@ -24,3 +24,10 @@
 .container:hover span{
   color: #b6b6b6 !important;
 }
+
+@media (max-width: 1072px){
+  .container {
+    flex: 0 0 calc(24% - 5px);
+    gap: 0;
+  }
+}

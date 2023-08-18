@@ -1,7 +1,108 @@
 .container{
+  position: relative;
   width: 100%;
   border: 1px solid grey;
   border-radius: 0.5em;
   background-color: rgba(66, 66, 66, 0.753);
-  padding: 1em;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
+.container button{
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.container svg{
+  color: grey;
+  font-size: 1.5em;
+  transition: 100ms ease;
+}
+.container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.play{
+  cursor: pointer;
+  border-radius: 0.5em;
+  transition: 100ms ease;
+  padding: 0.8em;
+}
+.play:hover{
+  background-color: grey;
+}
+.play:hover svg{
+  color: white;
+}
+
+
+
+.rangeInput {
+  display: block;
+  width: 250px;
+}
+
+.rangeInput:focus {
+  outline: none;
+}
+
+.rangeInput,
+.rangeInput::-webkit-slider-runnable-track,
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+
+.rangeInput::-moz-range-thumb {
+  background-color: #777;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+.rangeInput::-ms-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+.rangeInput::-webkit-slider-runnable-track {
+  background-color: #777;
+  height: 3px;
+}
+
+.rangeInput:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+.rangeInput::-moz-range-track {
+  background-color: #777;
+  height: 3px;
+}
+
+.rangeInput::-ms-track {
+  background-color: #777;
+  height: 3px;
+}
+
+.rangeInput::-ms-fill-lower {
+  background-color: HotPink
+}
+
+.rangeInput::-ms-fill-upper {
+  background-color: black;
+} 

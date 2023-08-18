@@ -1,6 +1,7 @@
 /* eslint-disable */
 
 import style from './AboutMe.module.css'
+import CloudShape from './CloudShape'
 
 const AboutMe = () => {
   return (
@@ -19,6 +20,7 @@ const AboutMe = () => {
           and I'm excited to continue developing my skills as a frontend developer.
         </p>
       </div>
+      <CloudShape />
     </>
   )
 }

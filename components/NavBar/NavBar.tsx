@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { BiFolder, BiHomeAlt2, BiUser } from 'react-icons/bi'
+import { BiFolder, BiHomeAlt2 } from 'react-icons/bi'
 import style from './NavBar.module.css'
 
 const navOptions = [
@@ -11,11 +11,6 @@ const navOptions = [
     name: 'Home',
     path: '/',
     icon: <BiHomeAlt2 />
-  },
-  {
-    name: 'About',
-    path: '/about',
-    icon: <BiUser />
   },
   {
     name: 'Proyects',
