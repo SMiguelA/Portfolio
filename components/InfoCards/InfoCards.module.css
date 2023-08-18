@@ -130,3 +130,9 @@
   transform: translatey(-3.8em);
   opacity: 1;
 }
+
+@media (max-width: 1000px){
+  .gif{
+    height: 26vw;
+  }
+}
