@@ -106,3 +106,12 @@
 .rangeInput::-ms-fill-upper {
   background-color: black;
 } 
+
+@media (max-width: 600px){
+  .container div{
+    width: 80%;
+  }
+  .rangeInput{
+    width: 90%;
+  }
+}

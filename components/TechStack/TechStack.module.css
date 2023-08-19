@@ -31,3 +31,14 @@
     gap: 0;
   }
 }
+@media (max-width: 600px){
+  .container{
+    flex: 0 0 calc(23% - 5px);
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 430px){
+  .container{
+    width: 5em;
+  }
+}

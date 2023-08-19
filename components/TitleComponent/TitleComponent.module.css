@@ -42,3 +42,19 @@
   top: 2.5em;
   left: -2.5em;
 }
+
+@media (max-width: 600px){
+  .figModel1, .figModel2, .figModel3{
+    display: none !important;
+  }
+  .container{
+    padding: 0.5em;
+  }
+  .container p{
+    font-size: 1em;
+    max-width: 80%;
+  }
+  .container div{
+    font-size: 1em;
+  }
+}
