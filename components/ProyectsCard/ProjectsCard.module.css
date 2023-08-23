@@ -113,3 +113,14 @@
 .container:hover > .title{
   opacity: 0;
 }
+
+@media (max-width:1060px){
+  .container{
+    width: 47%;
+  }
+}
+@media (max-width:900px){
+  .container{
+    width: 100%;
+  }
+}
