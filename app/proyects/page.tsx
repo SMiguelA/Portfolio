@@ -1,4 +1,3 @@
-/* eslint-disable */
 import ProjectsCard from '@/components/ProyectsCard/ProjectsCard'
 import Image from 'next/image'
 import animalCoffe from '../../imgs/coffe.gif'
@@ -14,7 +13,7 @@ const page = () => {
     <section className={style.container}>
       {
         data.map((info, index) => (
-          <ProjectsCard data={info} index={index}/>
+          <ProjectsCard data={info} index={index} key={index}/>
         ))
       }
       <Image src={animalCoffe} alt='Coffe' className={style.image}/>
