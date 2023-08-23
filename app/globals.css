@@ -26,7 +26,13 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #646464;
+  border-radius: 0.5em;
+}
 a {
   color: inherit;
   text-decoration: none;
