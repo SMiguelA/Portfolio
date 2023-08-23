@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable react/jsx-key */
 import { Projects } from '@/types.d'
 import { BiLogoGithub } from 'react-icons/bi'
 import style from './ProjectsCard.module.css'
