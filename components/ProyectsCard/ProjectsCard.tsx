@@ -10,7 +10,7 @@ const ProyectsCard = ({ data, index } : { data:Projects, index:number }) => {
   }
 
   return (
-    <div className={style.container} key={index} style={backgroundImage}>
+    <div className={style.container} style={backgroundImage}>
       <h2 className={style.title}>{data.name}</h2>
       <div className={style.infoCont}>
         <div className={style.mediaCont}>
@@ -21,7 +21,7 @@ const ProyectsCard = ({ data, index } : { data:Projects, index:number }) => {
         </div>
         <div className={style.techStack}>
           {
-            data.techStack.map((technology, index) => <span key={index}>{technology}</span>)
+            data.techStack.map((technology, index) => <span key={technology}>{technology}</span>)
           }
         </div>
         <p>

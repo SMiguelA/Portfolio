@@ -14,7 +14,7 @@ const page = () => {
     <section className={style.container}>
       {
         data.map((info, index) => (
-          <ProjectsCard data={info} index={index} key={index}/>
+          <ProjectsCard data={info} index={index} key={info.name}/>
         ))
       }
       <Image src={animalCoffe} alt='Coffe' className={style.image}/>
