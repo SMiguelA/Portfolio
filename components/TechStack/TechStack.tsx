@@ -28,7 +28,7 @@ const TechStack = () => {
       {
         data.map((item, index) => (
           <div 
-            key={index} 
+            key={item.color} 
             style={{color: isHovered === index ? item.color : '#b6b6b6', 
                     border: `1px solid ${isHovered === index ? item.color : '#b6b6b6'}` }}
             className={style.container}

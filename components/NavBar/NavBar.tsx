@@ -34,7 +34,7 @@ const NavBar = () => {
       <ul>
         {
           navOptions.map((option, index) => (
-            <li key={index} className={page === option.path ? style.page : style.component}>
+            <li key={option.name} className={page === option.path ? style.page : style.component}>
               <Link href={option.path}>
                 {option.icon}
               </Link>

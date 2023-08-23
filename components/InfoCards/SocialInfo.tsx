@@ -48,7 +48,7 @@ const SocialInfo = () => {
       <div className={style.socialMedia}>
         {
           socialMedia.map((option, index) => (
-            <div key={index}>
+            <div key={option.path}>
               <a href={option.path} target={option.path !=='#' ? '_balnk' : '_self'}>
                 {option.icon}
               </a>
