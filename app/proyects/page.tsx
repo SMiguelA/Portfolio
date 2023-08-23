@@ -1,3 +1,4 @@
+/* eslint-disable */
 import ProjectsCard from '@/components/ProyectsCard/ProjectsCard'
 import Image from 'next/image'
 import animalCoffe from '../../imgs/coffe.gif'
