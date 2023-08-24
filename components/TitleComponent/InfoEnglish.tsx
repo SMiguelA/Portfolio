@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import TypingEffect from '../TypingEffect/TypingEffect'
 import ShapesFloating from './ShapesFloating'
 import style from './TitleComponent.module.css'
