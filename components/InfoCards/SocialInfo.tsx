@@ -49,7 +49,7 @@ const SocialInfo = () => {
         {
           socialMedia.map((option, index) => (
             <div key={option.path}>
-              <a href={option.span} target={option.path !=='#' ? '_balnk' : '_self'}>
+              <a href={option.path} target={option.path !=='#' ? '_balnk' : '_self'}>
                 {option.icon}
               </a>
               <span>{option.span}</span>
