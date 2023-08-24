@@ -1,6 +1,7 @@
 import NavBar from '@/components/NavBar/NavBar'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Head from 'next/head'
 import { Providers } from '../redux/provider'
 import './globals.css'
 
@@ -18,6 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Miguel Sierra Portfolio</title>
+        <meta name="description" content="Pagina de presentación Miguel Angel Sierra" />
+        <meta property="og:title" content="Miguel Sierra Portfolio" />
+        <meta property="og:description" content="Pagina de presentación Miguel Angel Sierra" />
+      </Head>
       <Providers>
         <body className={inter.className}>
           <NavBar />
