@@ -25,7 +25,7 @@ const SocialInfo = () => {
     {
       span: language === 'EN' ? 'Download CV' : 'Descargar CV',
       icon: <BiFile />,
-      path: '#'
+      path: 'https://drive.google.com/file/d/1_ijLJIE5M66FEvM_8WkPpQApr01YIiMC/view?usp=sharing'
     },
     {
       span: language === 'EN' ? 'Contact Me' : 'Contactame',
