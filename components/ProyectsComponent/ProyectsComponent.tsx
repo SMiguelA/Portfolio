@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import animalCoffe from '../../imgs/coffe.gif'
 import { Projects } from '../../types.d'
-import style from './ProyectsComponent'
+import style from './ProyectsComponent.module.css'
 import projectInfoEnglish from './projectsInfoEnglish'
 import projectInfoSpanish from './projectsInfoSpanish'
 
