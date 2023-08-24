@@ -123,6 +123,7 @@
   cursor: pointer;
   border: none;
   transition: 200 ease-in-out;
+  text-align: center;
 }
 .select option{
   color: white;
