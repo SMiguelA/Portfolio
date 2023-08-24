@@ -9,8 +9,8 @@ const DataSpanish = () => {
       </div>
 
       <div>
-        <span>Edad:</span>
-        <span>19</span>
+        <span>País:</span>
+        <span>Colombia</span>
       </div>
 
       <div>

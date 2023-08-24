@@ -9,8 +9,8 @@ const DataEnglish = () => {
       </div>
 
       <div>
-        <span>Age:</span>
-        <span>19</span>
+        <span>Country:</span>
+        <span>Colombia</span>
       </div>
 
       <div>
