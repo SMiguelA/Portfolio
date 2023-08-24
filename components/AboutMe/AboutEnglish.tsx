@@ -4,7 +4,7 @@ const AboutEnglish = () => {
   return (
     <>
       <p>
-        Junior Frontend developer with a passion for creating beautiful and 
+        Frontend developer with a passion for creating beautiful and 
         functional user interfaces. When I'm not coding, you can usually find me 
         sipping on a cup of coffee in a relaxing environment.
       </p>

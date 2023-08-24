@@ -3,7 +3,7 @@ const AboutSpanish = () => {
   return (
     <>
       <p>
-        Desarrollador Junior Frontend con pasión por crear y diseñar
+        Desarrollador Frontend con pasión por crear y diseñar
         interfaces de usuario funcionales. Cuando no estoy codeando, normalmente puedes encontrarme
         tomando una taza de café en un ambiente relajante.
       </p>
