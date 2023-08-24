@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <title>Miguel Sierra Portfolio</title>
+        <link rel="shortcut icon" href="/favicon.svg" />
         <meta name="description" content="Pagina de presentación Miguel Angel Sierra" />
         <meta property="og:title" content="Miguel Sierra Portfolio" />
         <meta property="og:description" content="Pagina de presentación Miguel Angel Sierra" />
