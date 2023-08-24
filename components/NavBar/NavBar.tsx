@@ -1,9 +1,10 @@
 'use client'
-
+import { changeEnglish, changeSpanish } from '@/redux/features/counter/counterSlice'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 import { BiFolder, BiHomeAlt2 } from 'react-icons/bi'
+import { useDispatch } from 'react-redux'
 import style from './NavBar.module.css'
 
 const navOptions = [
@@ -23,10 +24,24 @@ const NavBar = () => {
 
   const route = usePathname();
   const [page, setPage] = useState('/');
+  const [option, setOption] = useState('EN');
+  const dispatch = useDispatch()
 
   useEffect(() => {
     setPage(route)
   }, [route])
+
+
+
+  const handlerLanguage = (event: ChangeEvent<HTMLSelectElement>) => {
+    if(event.target.value === 'EN'){
+      dispatch(changeEnglish())
+      setOption('EN')
+    }else{
+      dispatch(changeSpanish())
+      setOption('ES')
+    }
+  }
 
   // console.log(page)
   return (
@@ -43,6 +58,15 @@ const NavBar = () => {
           ))
         }
       </ul>
+      
+      <select onChange={(event) => handlerLanguage(event)} className={style.select}>
+          <option value='EN' selected>
+            EN
+          </option>
+          <option value='ES'>
+            ES
+          </option>
+      </select>
     </nav>
   )
 }

@@ -1,55 +1,55 @@
-import { BiFile, BiLogoGithub, BiLogoLinkedin, BiMessageAltDetail } from 'react-icons/bi'
+'use client'
+import { RootState } from '@/redux/store'
+import { BiFile, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
+import { MdAlternateEmail } from 'react-icons/md'
+import { useSelector } from 'react-redux'
+import DataEnglish from './DataEnglish'
+import DataSpanish from './DataSpanish'
 import style from './InfoCards.module.css'
 
-const socialMedia = [
-  {
-    span: 'Linkedin',
-    icon: <BiLogoLinkedin />,
-    path: 'https://www.linkedin.com/in/miguel-angel-sierra-bolanos/'
-  },
-  {
-    span: 'GitHub',
-    icon: <BiLogoGithub />,
-    path: 'https://github.com/SMiguelA'
-  },
-  {
-    span: 'Download CV',
-    icon: <BiFile />,
-    path: '#'
-  },
-  {
-    span: 'Contact Me',
-    icon: <BiMessageAltDetail />,
-    path: '#'
-  }
-]
-
 const SocialInfo = () => {
+
+  const language = useSelector((state:RootState) => state.language.value)
+
+  const socialMedia = [
+    {
+      span: 'Linkedin',
+      icon: <BiLogoLinkedin />,
+      path: 'https://www.linkedin.com/in/miguel-angel-sierra-bolanos/'
+    },
+    {
+      span: 'GitHub',
+      icon: <BiLogoGithub />,
+      path: 'https://github.com/SMiguelA'
+    },
+    {
+      span: language === 'EN' ? 'Download CV' : 'Descargar CV',
+      icon: <BiFile />,
+      path: '#'
+    },
+    {
+      span: language === 'EN' ? 'Contact Me' : 'Contactame',
+      icon: <MdAlternateEmail />,
+      path: 'mailto:sierrabolanosmiguel@gmail.com'
+    }
+  ]
+
   return (
     <div className={style.socialContainer}>
-      <div className={style.dataContainer}>
-        <div>
-          <span>Name:</span>
-          <span>Miguel Angel Sierra</span>
-        </div>
-
-        <div>
-          <span>Age:</span>
-          <span>19</span>
-        </div>
-
-        <div>
-          <span>Status:</span>
-          <span>Chilling out</span>
-        </div>
-        <div className={style.gif}>
-        </div>
-      </div>
+      {
+        language === 'EN' 
+        ?(
+          <DataEnglish />
+        )
+        :(
+          <DataSpanish />
+        )
+      }
       <div className={style.socialMedia}>
         {
           socialMedia.map((option, index) => (
             <div key={option.path}>
-              <a href={option.path} target={option.path !=='#' ? '_balnk' : '_self'}>
+              <a href={option.span} target={option.path !=='#' ? '_balnk' : '_self'}>
                 {option.icon}
               </a>
               <span>{option.span}</span>

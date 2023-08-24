@@ -1,5 +1,8 @@
 .navbar{
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 10;
   height: fit-content;
   transition: 300ms ease;
@@ -108,7 +111,28 @@
   color: #c191f1;
 }
 
-
+.select{
+  appearance: none;
+  width: 100%;
+  margin: 2em 0 0 0;
+  font-size: 1.4em;
+  padding: 0.2em;
+  outline: none;
+  background-color: transparent;
+  color: #CE79FF;
+  cursor: pointer;
+  border: none;
+  transition: 200 ease-in-out;
+}
+.select option{
+  color: white;
+  background-color: #222222;
+}
+.select:hover{
+  border-radius: 0.5em;
+  background-color: #535353;
+  transition: 200 ease-in-out;
+}
 
 @media (max-width: 1000px){
   .navbar{
@@ -117,6 +141,8 @@
     right: 0;
     width: 100%;
     margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0.5em 1em;
     border-radius: 0;
     backdrop-filter: blur(20px);
@@ -140,5 +166,9 @@
   }
   .navbar ul li:hover > span {
     transform: translateX(-5px);
+  }
+  .select{
+    margin: 0;
+    width: fit-content;
   }
 }
