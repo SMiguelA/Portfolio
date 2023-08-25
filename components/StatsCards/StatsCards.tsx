@@ -17,7 +17,7 @@ const StatsCards = () => {
     {
       title: language === 'EN' ? 'Personal Projects' : 'Proyectos Personales',
       color: '#ce79ff',
-      data: '5'
+      data: '6'
     },
     {
       title: language === 'EN' ? 'Cups of Coffe' : 'Tazas de café',
