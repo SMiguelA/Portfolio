@@ -23,6 +23,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.svg" />
         <title>Miguel Sierra</title>
         <meta property="og:title" content="Miguel Sierra" key="title"/>
+        <meta name="google" content="notranslate" />
       </Head>
       <Head>
         <meta property="og:title" content="Miguel Sierra" key="title" />
